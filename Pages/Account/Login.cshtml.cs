@@ -28,7 +28,8 @@ namespace ASP.NET_Auth_under_the_hood_test.Pages.Account
                 {
                     new Claim(ClaimTypes.Name, InputData.UserName),
                     new Claim(ClaimTypes.Email, InputData.UserName + "@lynxhub.com"),
-                    new Claim("Admin", "true")
+                    new Claim("Admin", "true"),
+                    new Claim("Age", "12")
                 };
 
                 ClaimsIdentity LynxIdentity = new ClaimsIdentity(claims, _cookieName);

@@ -1,3 +1,6 @@
+using ASP.NET_Auth_under_the_hood_test.Authorization.Handlers;
+using ASP.NET_Auth_under_the_hood_test.Authorization.Requirements;
+using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 
 namespace ASP.NET_Auth_under_the_hood_test
@@ -20,8 +23,16 @@ namespace ASP.NET_Auth_under_the_hood_test
             builder.Services.AddAuthorization(options =>
             {
                 options.AddPolicy("AdminOnly", p => p.RequireClaim("Admin"));
-                options.AddPolicy("CEO", p => p.RequireClaim(ClaimTypes.Name,"Lynx"));
+
+                options.AddPolicy("CEO", p => p
+                    .RequireClaim(ClaimTypes.Name, "Lynx").RequireClaim("Admin"));
+
+                options.AddPolicy("18YearsOnly", p => p
+                    .RequireClaim("Age")
+                    .Requirements.Add(new UserAgeRequirement(18)));
             });
+
+            builder.Services.AddSingleton<IAuthorizationHandler, UserAgeRequirementHandler>();
 
             var app = builder.Build();
 
