@@ -1,3 +1,5 @@
+using System.Security.Claims;
+
 namespace ASP.NET_Auth_under_the_hood_test
 {
     public class Program
@@ -8,6 +10,18 @@ namespace ASP.NET_Auth_under_the_hood_test
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+
+            builder.Services.AddAuthentication("LynxCookie")
+                .AddCookie("LynxCookie", options =>
+                {
+                    options.Cookie.Name = "LynxCookie";
+                });
+
+            builder.Services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AdminOnly", p => p.RequireClaim("Admin"));
+                options.AddPolicy("CEO", p => p.RequireClaim(ClaimTypes.Name,"Lynx"));
+            });
 
             var app = builder.Build();
 
@@ -24,6 +38,7 @@ namespace ASP.NET_Auth_under_the_hood_test
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapRazorPages();

@@ -1,0 +1,35 @@
+﻿@page
+@model ASP.NET_Auth_under_the_hood_test.Pages.Account.LoginModel
+@{
+}
+
+<div class="container border" style="padding: 20px">
+    <form method="post">
+        <div class="mb-2 row">
+            <div class="col-2">
+                <label asp-for="InputData.UserName"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="InputData.UserName" class="form-control" />
+                <span class="text-danger" asp-validation-for="InputData.UserName"></span>
+            </div>
+        </div>
+        <div class="mb-2 row">
+            <div class="col-2">
+                <label asp-for="InputData.Password"></label>
+            </div>
+            <div class="col-5">
+                <input type="password" asp-for="InputData.Password" class="form-control" />
+                <span class="text-danger" asp-validation-for="InputData.Password"></span>
+
+            </div>
+        </div>
+        <div class="mb-2 row">
+            <div class="col-2">
+                <input type="submit" class="btn btn-primary" value="Login" />
+            </div>
+            <div class="col-5">
+            </div>
+        </div>
+    </form>
+</div>
