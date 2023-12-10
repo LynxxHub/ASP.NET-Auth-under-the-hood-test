@@ -35,7 +35,12 @@ namespace ASP.NET_Auth_under_the_hood_test.Pages.Account
                 ClaimsIdentity LynxIdentity = new ClaimsIdentity(claims, _cookieName);
                 ClaimsPrincipal cm = new ClaimsPrincipal(LynxIdentity);
 
-                await HttpContext.SignInAsync(_cookieName, cm);
+                AuthenticationProperties authProperties = new AuthenticationProperties()
+                {
+                    IsPersistent = InputData.RememberMe
+                };
+
+                await HttpContext.SignInAsync(_cookieName, cm, authProperties);
                 return RedirectToPage("/Index");
             }
 
@@ -52,6 +57,9 @@ namespace ASP.NET_Auth_under_the_hood_test.Pages.Account
         [Required]
         [DataType(DataType.Password)]
         public string Password { get; set; } = String.Empty;
+
+        [Display(Name = "Remember Me")]
+        public bool RememberMe { get; set; } = false;
 
     }
 }

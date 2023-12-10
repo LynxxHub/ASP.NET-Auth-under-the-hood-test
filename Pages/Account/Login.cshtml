@@ -21,7 +21,14 @@
             <div class="col-5">
                 <input type="password" asp-for="InputData.Password" class="form-control" />
                 <span class="text-danger" asp-validation-for="InputData.Password"></span>
-
+            </div>
+        </div>
+        <div class="mb-3 row form-check">
+            <div class="col-2">
+                <input type="checkbox" class="form-check-input" asp-for="InputData.RememberMe" />
+                <label class="form-check-label" asp-for="InputData.RememberMe"></label>
+            </div>
+            <div class="col-5">
             </div>
         </div>
         <div class="mb-2 row">
