@@ -34,6 +34,11 @@ namespace ASP.NET_Auth_under_the_hood_test
 
             builder.Services.AddSingleton<IAuthorizationHandler, UserAgeRequirementHandler>();
 
+            builder.Services.AddHttpClient("JWTApi", c =>
+            {
+                c.BaseAddress = new Uri("https://localhost:7146/");
+            });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

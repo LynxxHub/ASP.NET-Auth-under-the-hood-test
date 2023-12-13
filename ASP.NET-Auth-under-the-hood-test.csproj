@@ -7,4 +7,8 @@
     <RootNamespace>ASP.NET_Auth_under_the_hood_test</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
+  </ItemGroup>
+
 </Project>

@@ -3,6 +3,27 @@
 @{
 }
 
-<div class="container">
+<div class="text-center">
     <h1>Welcome to the Admin Panel!</h1>
+    <br />
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model.Tasks)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Description</td>
+                    <td>@item.Status</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
