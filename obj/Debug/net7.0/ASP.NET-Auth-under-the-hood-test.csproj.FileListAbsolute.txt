@@ -29,3 +29,5 @@ C:\Users\Wests\Desktop\ClassTesting\ASP.NET-Auth-under-the-hood-test\obj\Debug\n
 C:\Users\Wests\Desktop\ClassTesting\ASP.NET-Auth-under-the-hood-test\obj\Debug\net7.0\ASP.NET-Auth-under-the-hood-test.pdb
 C:\Users\Wests\Desktop\ClassTesting\ASP.NET-Auth-under-the-hood-test\obj\Debug\net7.0\ASP.NET-Auth-under-the-hood-test.genruntimeconfig.cache
 C:\Users\Wests\Desktop\ClassTesting\ASP.NET-Auth-under-the-hood-test\obj\Debug\net7.0\ref\ASP.NET-Auth-under-the-hood-test.dll
+C:\Users\Wests\Desktop\ClassTesting\ASP.NET-Auth-under-the-hood-test\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Wests\Desktop\ClassTesting\ASP.NET-Auth-under-the-hood-test\obj\Debug\net7.0\ASP.NET-Auth-under-the-hood-test.csproj.CopyComplete
