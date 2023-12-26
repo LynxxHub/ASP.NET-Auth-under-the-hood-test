@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP.NET-Auth-under-the-hood-test", "ASP.NET-Auth-under-the-hood-test.csproj", "{D9874B7B-0BA8-4126-9265-57C229328DBE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JWTTestAPI", "..\JWTTestAPI\JWTTestAPI.csproj", "{F693CD61-71B5-4C46-A7CF-8DBC73F13CAF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWTTestAPI", "..\JWTTestAPI\JWTTestAPI.csproj", "{F693CD61-71B5-4C46-A7CF-8DBC73F13CAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
