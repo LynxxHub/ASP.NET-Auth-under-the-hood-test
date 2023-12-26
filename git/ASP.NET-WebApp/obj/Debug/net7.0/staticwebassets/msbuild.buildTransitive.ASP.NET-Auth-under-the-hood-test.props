@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ASP.NET-Auth-under-the-hood-test.props" />
+</Project>

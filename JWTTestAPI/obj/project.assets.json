@@ -766,11 +766,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Wests\\Desktop\\ClassTesting\\ASP.NET-Auth-under-the-hood-test\\JWTTestAPI\\JWTTestAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Wests\\Desktop\\ClassTesting\\[LX] .NET IDENTITY\\JWTTestAPI\\JWTTestAPI.csproj",
       "projectName": "JWTTestAPI",
-      "projectPath": "C:\\Users\\Wests\\Desktop\\ClassTesting\\ASP.NET-Auth-under-the-hood-test\\JWTTestAPI\\JWTTestAPI.csproj",
+      "projectPath": "C:\\Users\\Wests\\Desktop\\ClassTesting\\[LX] .NET IDENTITY\\JWTTestAPI\\JWTTestAPI.csproj",
       "packagesPath": "C:\\Users\\Wests\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Wests\\Desktop\\ClassTesting\\ASP.NET-Auth-under-the-hood-test\\JWTTestAPI\\obj\\",
+      "outputPath": "C:\\Users\\Wests\\Desktop\\ClassTesting\\[LX] .NET IDENTITY\\JWTTestAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Wests\\AppData\\Roaming\\NuGet\\NuGet.Config",

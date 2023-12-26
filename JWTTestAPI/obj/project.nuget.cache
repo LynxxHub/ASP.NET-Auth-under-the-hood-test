@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LxxAo8Y2FxBzNrGcFduDAeZVR93xi4jmvRW9w4NEGjjJojDIGzwDryusBx+8ZweobmgEoLR9ges2RlLa7Oy/rQ==",
+  "dgSpecHash": "cpwSTiLaGlwq8gEHN9518EjMdBfBQ4/r52SeoPWotx9l+R96BRgQBXJa2YNYT9Xbhyg1zRM0BHjgeHfr2THVGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Wests\\Desktop\\ClassTesting\\ASP.NET-Auth-under-the-hood-test\\JWTTestAPI\\JWTTestAPI.csproj",
+  "projectFilePath": "C:\\Users\\Wests\\Desktop\\ClassTesting\\[LX] .NET IDENTITY\\JWTTestAPI\\JWTTestAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wests\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.14\\microsoft.aspnetcore.authentication.jwtbearer.7.0.14.nupkg.sha512",
     "C:\\Users\\Wests\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.1\\microsoft.aspnetcore.openapi.7.0.1.nupkg.sha512",
