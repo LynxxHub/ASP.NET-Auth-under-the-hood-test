@@ -1,2 +1,11 @@
-# ASP.NET-Auth-under-the-hood-test
-This repository is created for learning purposes. The code inside is written just for training before starting the final project. I'm not following any convetions here! Link for the final project: SOON!
+# Simplified .NET Auth Project
+
+## About
+This is a basic project for learning authentication and authorization concepts. It's a very simplified version and not connected to a database.
+
+## Note
+- **For learning only:** This project is just for understanding how identity works in web apps.
+- **Not for production use:** It's not a complete solution for real applications.
+
+## Next Steps
+I plan to improve my customized .NET identity system for future web projects, using what I've learned here.
