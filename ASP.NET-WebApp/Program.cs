@@ -1,6 +1,8 @@
 using ASP.NET_Auth_under_the_hood_test.Authorization.Handlers;
 using ASP.NET_Auth_under_the_hood_test.Authorization.Requirements;
+using ASP.NET_WebApp.Authentication.Services;
 using Microsoft.AspNetCore.Authorization;
+using System.Net.Http;
 using System.Security.Claims;
 
 namespace ASP.NET_Auth_under_the_hood_test
@@ -33,10 +35,19 @@ namespace ASP.NET_Auth_under_the_hood_test
             });
 
             builder.Services.AddSingleton<IAuthorizationHandler, UserAgeRequirementHandler>();
+            builder.Services.AddHttpContextAccessor();
+            builder.Services.AddTransient<APIAuthenticationService>();
 
             builder.Services.AddHttpClient("JWTApi", c =>
             {
                 c.BaseAddress = new Uri("https://localhost:7146/");
+            });
+
+            builder.Services.AddSession(options =>
+            {
+                options.Cookie.HttpOnly = true;
+                options.IdleTimeout = TimeSpan.FromMinutes(5);
+                options.Cookie.IsEssential = true;
             });
 
             var app = builder.Build();
@@ -53,6 +64,7 @@ namespace ASP.NET_Auth_under_the_hood_test
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseSession();
 
             app.UseAuthentication();
             app.UseAuthorization();

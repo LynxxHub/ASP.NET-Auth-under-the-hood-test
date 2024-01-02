@@ -33,7 +33,7 @@ namespace JWTTestAPI.Controllers
                 new Claim("UserID", user.UserID)
             };
 
-            var expiringDate = DateTime.Now.AddMinutes(15);
+            var expiringDate = DateTime.UtcNow.AddSeconds(30);
 
 
             return Ok(new
@@ -49,7 +49,7 @@ namespace JWTTestAPI.Controllers
 
             var jwt = new JwtSecurityToken(
                     claims: claims,
-                    notBefore: DateTime.Now,
+                    notBefore: DateTime.UtcNow,
                     expires: expiringDate,
                     signingCredentials: new SigningCredentials(
                                 new SymmetricSecurityKey(securityKey),

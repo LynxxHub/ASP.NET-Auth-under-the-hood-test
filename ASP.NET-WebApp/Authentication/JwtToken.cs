@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace ASP.NET_Auth_under_the_hood_test.Authorization
+namespace ASP.NET_WebApp.Authentication
 {
     public class JwtToken
     {
