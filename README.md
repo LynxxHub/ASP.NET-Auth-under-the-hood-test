@@ -8,4 +8,4 @@ This is a basic project for learning authentication and authorization concepts. 
 - **Not for production use:** It's not a complete solution for real applications.
 
 ## Next Steps
-I plan to improve my customized .NET identity system for future web projects, using what I've learned here.
+I plan to improve my customized [.NET identity template](https://github.com/LynxxHub/ASP.NET-Custom-Identity-Starter), using what I've learned here.
